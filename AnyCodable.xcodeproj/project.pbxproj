@@ -49,8 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"AnyCodable::AnyCodable::Product" /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnyCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"AnyCodable::AnyCodableTests::Product" /* AnyCodableTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AnyCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AnyCodable::AnyCodable::Product" /* AnyCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AnyCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AnyCodable::AnyCodableTests::Product" /* AnyCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = AnyCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* AnyDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
 		OBJ_11 /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
 		OBJ_14 /* AnyCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodableTests.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -115,7 +115,6 @@
 				OBJ_12 /* Tests */,
 				OBJ_18 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -194,15 +193,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"AnyCodable::AnyCodable" = {
+						LastSwiftMigration = 1020;
+					};
+					"AnyCodable::AnyCodableTests" = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "AnyCodable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,7 +287,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AnyCodable;
 			};
 			name = Debug;
@@ -303,7 +311,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AnyCodable;
 			};
 			name = Release;
@@ -400,7 +408,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AnyCodableTests;
 			};
 			name = Debug;
@@ -421,7 +429,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = AnyCodableTests;
 			};
 			name = Release;
